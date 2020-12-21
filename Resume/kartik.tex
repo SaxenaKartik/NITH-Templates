@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in %-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+% \documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,timesnewroman,11pt, twoside]{article}
+
+
+\usepackage[a4paper]{geometry}
+\geometry{verbose, tmargin=2mm, bmargin=2mm, lmargin=3mm, rmargin=2mm}
+\linespread{1.5}
+
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{authblk, lineno, hyperref, color, lscape, url, sectsty}
+\usepackage[autostyle]{csquotes}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[labelfont=bf]{caption}
+\usepackage{emptypage}
+\usepackage{amsmath, amsfonts, mathtools, notoccite}
+\usepackage{array, float, multirow, graphicx, setspace, cleveref, cite, url, titlesec, tocloft}
+\usepackage{chngcntr, rotating, pdflscape, enumitem, subcaption}
+\usepackage{calligra}
+\usepackage{fullpage}
+\usepackage{times}
+\usepackage{fancyhdr, amssymb}
+% \usepackage{latexsym}
+% \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+% \usepackage{algpseudocode}
+% \usepackage[empty]{fullpage}
+% \usepackage{titlesec}
+% \usepackage{marvosym}
+% \usepackage[usenames,dvipsnames]{color}
+% \usepackage{verbatim}
+% \usepackage{enumitem}
+% \usepackage[hidelinks]{hyperref}
+% \usepackage{fancyhdr}
+% \usepackage[english]{babel}
+
+\numberwithin{equation}{section}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{#2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3.1pt}
+}
+
+\newcommand{\resumeSubheadingk}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  &\textit{#2} \\
+      % \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3.1pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-12pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {\textbf{\Large Kartik Saxena}} & Email : \href{mailto:kartiksaxena500@gmail.com}{kartiksaxena500@gmail.com}\\
+  \href{https://github.com/SaxenaKartik}{github.com/SaxenaKartik} \& \href{https://sourcerer.io/SaxenaKartik}{sourcerer.io/SaxenaKartik}  & Phone No : +917982293578\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Dual Degree in Computer Science and Engineering, CGPA: 9.18}{July 2016 -- May 2021}
+    {National Institute of Technology Hamirpur, Himachal Pradesh, India}{(CGPA : 9.18)}
+    % \resumeSubheading
+    % {Bachelor of Computer Science and Engineering;  CGPA: 9.18}{Jul. 2016 -- Till Date}
+    % {National Institute of Technology Hamirpur}{Himachal Pradesh, India}
+    \resumeSubheading
+      {Delhi Public School Ghaziabad}{May 2014 -- May 2016}
+      {Senior Secondary School}{(Percentage : 95\%)}
+    \resumeSubheading
+      {St. Mary's Convent School, Ghaziabad}{May 2013 -- May 2014}
+      {High School}{(Percentage : 93.4\%)}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheadingk
+      {Amazon : Upcoming Internship 2021}{Jan 2021 - July 2020}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Project}
+          {Description of the project}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+    \resumeSubheadingk
+      {Mechanical Chef : Summer Internship 2019}{May 2019 - July 2019}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Website and Backend}
+          {Built the official \textbf{Mechanical Chef} website in Django with a MySQL backend, to automate the process of preparing any dish using the \textbf{Mechanical Chef Robot}.}
+        \resumeItem{Simulator}
+          {Built a state-based simulator using MVC design pattern to test and debug the website. The simulator worked by polling the website for any instructions given by the user.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheadingk
+      {Memex-Worldbrain : Open Source Contribution}{Jan 2019 - Feb 2019}
+      {}{}
+      \resumeItemListStart
+        % \resumeItem{ReactJS}
+        %   {Contributed to Memex by WorldBrain worked at \href{https://github.com/WorldBrain/Memex/pull/739}{\textbf{Overhauling the memex design}} and modularizing the built-in components for quick and easy future implementation.}
+        \resumeItem{Solved Bug}
+          {Merged a \href{https://github.com/WorldBrain/Memex/pull/693}{\textbf{pull request}} solving a bug in the dashboard of the browser extension}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% -------------------------------------------
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming Languages}{: Python3, C++, C, JavaScript}
+     % \hfill
+   }
+   
+   \item{
+      \textbf{Frameworks, Tools and Technologies}{: Django, Django REST Framework, Git, Github, Design Patterns, ReactJS, GNU/Linux, LaTeX, AWS, Selenium Webdriver, MySQL, Ngrok}
+   }
+   \item{
+      \textbf{Competitive Programming}{: \href{https://www.leetcode.com/saxenakartik}{Leetcode}, \href{http://codeforces.com/profile/krtksxn}{Codeforces}, \href{https://www.codechef.com/users/kartik_saxena}{Codechef}, \href{https://www.spoj.com/users/kartik_s/}{SPOJ}, \href{https://www.hackerrank.com/kartiksaxena500}{Hackerrank}, \href{https://www.hackerearth.com/@saxenakartik}{Hackerearth}}
+      \hfill
+   }
+ \resumeSubHeadingListEnd
+
+
+% -------------------------------------------
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Wireless network coverage using UAV drones}
+    { To build, deploy and manage a wireless network using \textbf{UAVs used as wireless access points} aimed at providing \textbf{urgent internet / communication facility} to the places that \textbf{lack necessary infrastructure}. Built using Django and Django REST Framework with a SQL database. Github Link : \href{https://github.com/SaxenaKartik/MP2}{\textbf{Wireless Access Points}}
+    }
+    \resumeSubItem{Real-time priority based scheduler for real world applications}
+    { A \textbf{real-time priority based scheduling application}, that can build a real-time \textbf{schedule for the everyday activities} of a user, ensure that the schedule is customizable by the user and also \textbf{monitor the efficiency} of the user. It is built using \textbf{Django Framework with a MySQL database}. Github Link : \href{https://github.com/SaxenaKartik/MP1}{\textbf{YourScheduler}}
+    }
+    \resumeSubItem{Official Mechanical Chef Website}
+      {An \textbf{interface between the mechanical chef robot} and the user along with backend support to maintain a profile, place orders on the robot, see the real-time status of the dish being prepared with video streaming. Also built a \textbf{simulator using the MVC design pattern} to simulate the state-based actions of the robot.}
+    \resumeSubItem{Poster Maker React App}
+      {Built a single page React App for \textbf{building a customized poster} over a given layout with the details entered as fields, also having the functionality to \textbf{download the poster as JPEG, PNG and PDF}. Built using ReactJS, primarily using Hooks. Github Link : \href{/https://github.com/SaxenaKartik/Heuristics-Poster}{\textbf{Poster Maker}}
+      } 
+    \resumeSubItem{Visualizing the NQUEENS problem through GUI}
+      {A \textbf{GUI visualization of NQUEENS problem} in Python2 and C++, built using \textbf{Subprocess} and \textbf{PyGame} python library}
+    \resumeSubItem{Library Management Software}
+      {A \textbf{software solution for a librarian} built-in \textbf{Java Netbeans IDE} with a backend in \textbf{MySQL} Github Link : \href{https://github.com/SaxenaKartik/Library-Management-Software}{\textbf{Library Management Software}}
+      }
+    %\resumeSubItem{Search Engine}
+    %  {A search engine built in python as a part of \href{https://classroom.udacity.com/courses/cs101}{\textbf{this}} course on udacity}
+  \resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{ACM-ICPC 2019}
+      {Member of team RBTREE NODES which got a \href{https://www.codechef.com/public/rankings/ACM18KOL}{\textbf{Rank of 40}} out of 159 participating teams in the Kanpur Regionals of the contest. More than 4000 participants participated in the online round. Received an Honourable Mention amongst the 159 qualifying teams. Our team secured a \href{https://www.codechef.com/rankings/ACMIND18}{\textbf{Rank of 621}} amongst all the 3282 participating teams in the online qualifying round and was the only qualifying team from our college in Kanpur and Indore region.}
+    \resumeSubItem{Codechef Snackdown 2019}
+      {Member of team RBTREE NODES which got a \href{https://www.codechef.com/rankings/SNCK1B19?order=asc&search=rbtree&sortBy=rank}{\textbf{Global Rank 1}} in the Online Round 1B with over 15856 teams participating}
+    \resumeSubItem{CodeSwap Challenge}
+    {
+      Won \textbf{2nd prize} in CodeSwap Challenge, organized by .EXE (Technical Team, CSED NITH), wherein a team of two has to program a few coding problems and swap places midway between the contest.
+    }
+    \resumeSubItem{Model United Nations}
+      {Participated in formal conferences like \textbf{DUMUN 2017} representing the {\textit{Delegate of Germany}}, \textbf{NITH MUN 2017} representing the \textit{ Delegate of People's Republic of China} }
+    \resumeSubItem{Udbhava Hackathon 2016}
+      {Member of team Anonymous, which was awarded {\textbf{2nd runner up}} amongst all the participating teams}
+    \resumeSubItem{WMN 2019}
+      {Invited to the \textbf{WMN hackathon} as a part of Devfolio beta version launch, discussions and review}
+  \resumeSubHeadingListEnd
+
+%-----------CO-CURRICULAR-----------------
+\section{CO-CURRICULAR}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Joint Secretary App Team NITH}
+      {Organizing member of \href{https://www.hackonhills.com/}{\textbf{Hack On Hills}}. Being 2nd most registered student held Hackathon in India with about 1068 registrations on DevFolio after Hack In Out 2019. Backend Developer of various Android Apps built annually for the college fests. Organized various workshops on \textbf{Git \& Github}}
+    \resumeSubItem{Senior Executive Member CSEC NITH}
+      {Organizing member of CSEC's monthly programming contest \textbf{Heuristics} on hackerearth and codeforces. Conducted weekly programming meets for freshmen}
+    \resumeSubItem{Volunteer GLUG NITH}
+      {Organizing member of \textbf{Software Freedom Day Celebration} in NITH for four consecutive years, aimed at promoting the use of free and open-source software.}
+    \resumeSubItem{Senior Editor Team SRIJAN}
+      {Member of \textbf{English Team} in the official college magazine. Written articles on how the coding culture of our college is flourishing and giving rise to startups, hackathons and GSOC representation}
+    \resumeSubItem{English Club}
+      {Member of \textbf{English Club} in NITH. Organized the first and second iteration of the Annual Literature Fest of our college \textbf{LIT AF} and various other events}
+  \resumeSubHeadingListEnd
+\end{document}
